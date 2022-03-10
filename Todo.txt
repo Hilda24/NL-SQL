@@ -1,0 +1,39 @@
+Natural language to SQL
+
+Approach: Split the structure of SQL query as Fill ups...(Basic model)
+
+SELECT ____1_____ ______2______  FROM _____3_____ WHERE ______4_______ ____5_____ _____6_____
+ 1 = avg, count, min, max, sum 
+ 2 = column name
+ 3 = table name
+ 4 = coulmn name
+ 5 = operator/condition (>=, <=, <, >, ==, <>)
+ 6 = Value
+
+ NL : 
+
+ Module 1
+
+ Find out the question type
+ 6 types of query - Classify the given NL into one of those 6 types - done
+ Todo: Increase the accuracy TT
+
+ Module 2
+
+ Extract Keywords - rank them 
+ Find out conditions and operations
+ find out Key, value pairs in NL (name = hil) (Bert, POS tagging)
+ !!!IMPORTANT : Create a graph(BFS) to link different table for JOIN queryyy...(doubttt)
+
+
+ Module 3
+
+ Interface
+ Connection to DB 
+ Maybe: Plotting data
+
+
+
+
+
+ 
